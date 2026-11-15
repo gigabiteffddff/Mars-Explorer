@@ -1,0 +1,29 @@
+{
+  "source_url": "https://asc-planetarynames-data.s3.us-west-2.amazonaws.com/MARS_nomenclature_center_pts.kmz",
+  "catalogue_url": "https://planetarynames.wr.usgs.gov/GIS_Downloads",
+  "retrieved_at_utc": "2026-11-15T08:30:44.397996+00:00",
+  "body": "Mars",
+  "latitude_type": "planetocentric",
+  "longitude_direction": "positive_east",
+  "longitude_range": [
+    -180,
+    180
+  ],
+  "control_network": "MDIM 2.1",
+  "position_type": "catalogue_feature_center",
+  "count": 2054,
+  "duplicates_removed": 1,
+  "category_counts": {
+    "Hills and Ridges": 73,
+    "Other features": 414,
+    "Craters": 1258,
+    "Valleys": 188,
+    "Mountains": 121
+  },
+  "notes": [
+    "Catalogue centres are not landing sites or mountain summits.",
+    "diameter_km is approximate diameter or longest dimension.",
+    "Category grouping describes browsing groups, not geological origin.",
+    "Scientific environmental overlays remain DEMO."
+  ]
+}
