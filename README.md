@@ -42,3 +42,6 @@ Check the file with `python fields.py` (Olympus ~ +21000 m, Gale ~ -4400 m).
 
 Note: when you change the radiation range in `config.LAYERS`, contour levels
 follow automatically (only levels that exist in the data are drawn).
+
+## Important
+If the map does not appear right away, just click the white text at the top of the page.
