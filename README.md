@@ -11,9 +11,10 @@ distances in km.
 |------|--------|
 | Base imagery | NASA Mars Trek tiles (needs internet) |
 | Elevation, slope | MOLA topography, 16 px/degree (~3.7 km) - needs `data/megt90n000eb.img` |
+| Temperature | Mars Climate Database (MCD), LMD Paris: https://www-mars.lmd.jussieu.fr/mcd_python/index.html |
 | Radiation | simple MODEL: GCR dose vs atmospheric column depth (from elevation), calibrated on Curiosity/RAD at Gale (0.21 mGy/day). No solar events, seasons, dust |
 | Place names | USGS/IAU catalogue `data/mars_features.json` |
-| Temperature, hazard zones, Jezero sites | synthetic DEMO |
+| Hazard zones, Jezero sites | synthetic DEMO |
 
 ## MOLA elevation file (one-time, ~33 MB)
 Download `megt90n000eb.img` (MOLA MEGDR, 16 pixels/degree, topography) from the
@@ -41,19 +42,3 @@ Check the file with `python fields.py` (Olympus ~ +21000 m, Gale ~ -4400 m).
 
 Note: when you change the radiation range in `config.LAYERS`, contour levels
 follow automatically (only levels that exist in the data are drawn).
-
-## Language
-The language switcher is at the top of the sidebar (English / Українська).
-All interface text lives in `i18n.py`. To add a language, add it to
-`LANGUAGES` and copy the `"en"` dict in `STRINGS`; missing keys fall back to
-English. USGS place names stay in their official form.
-
-## Removing comments from the code (plugin)
-`plugins/strip_comments.py` writes a comment-free copy of the project and
-never touches the originals by default:
-
-    python plugins/strip_comments.py                  # copy next to the project
-    python plugins/strip_comments.py --check          # report only
-    python plugins/strip_comments.py --in-place       # overwrite sources
-    python plugins/strip_comments.py --docstrings     # also drop docstrings
-    python plugins/strip_comments.py --embedded       # also CSS/JS comments inside Python strings
