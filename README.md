@@ -1,6 +1,6 @@
 # Mars Explorer (Streamlit demo)
 
-![Логотип проєкту](assets/screen.png)
+![logo](assets/screen.png)
 
 Run: `pip install -r requirements.txt && streamlit run app.py`
 (or `python run_mars.py`)
